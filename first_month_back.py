@@ -22,7 +22,7 @@ def i_do_the_thing(person, total_days):
 def nice_message(person, payment_percentage):
     name, day = person
     print('-' * 60)
-    print (f" {name}: {payment_percentage * 100 :.2f}% of electrical power which is ${payment_percentage * electricty_power_cost:.2f}\n 20% of the $124 second gas bottle which is ${0.2 * 124:.2f}\n 20% of the $93 internet plan is ${0.2 * 93:.2f}\n this comes to a total of:\n {payment_percentage * electricty_power_cost:.2f} + {0.2 * 124:.2f} + {0.2 * 93:.2f} = ${payment_percentage * electricty_power_cost + 0.2 * 124 + 0.2 * 93:.2f}")
+    print (f" {name}: {payment_percentage * 100 :.2f}% of electrical power which is ${payment_percentage * electricty_power_cost:.2f}\n 20% of the $124 second gas bottle which is ${0.2 * 124:.2f}\n The internet plan is ${payment_percentage * 93:.2f}\n This comes to a total of:\n {payment_percentage * electricty_power_cost:.2f} + {0.2 * 124:.2f} + {payment_percentage * 93:.2f} = ${payment_percentage * electricty_power_cost + 0.2 * 124 + 0.2 * 93:.2f}")
 
 def main():
     cade = ['Cade', 1]
